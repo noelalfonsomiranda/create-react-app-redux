@@ -1,8 +1,9 @@
-import React, {PureComponent} from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import ToDoItem from '../components/ToDoItem'
 import {loadToDoList} from '../actions'
 
-class ToDoListContainer extends PureComponent {
+class ToDoListContainer extends Component {
   componentDidMount() {
     this.props.loadToDoList()
   }
@@ -11,9 +12,7 @@ class ToDoListContainer extends PureComponent {
     return (
       <div>
         <ul>
-          {this.props.toDoList.map((toDo, index) => (
-            <li key={index}>{toDo.title}</li>
-          ))}
+          <ToDoItem toDoList={this.props.toDoList} />
         </ul>
       </div>
     )

@@ -13,3 +13,4 @@
 - styled-components
 - redux-logger
 - redux-promise-middleware
+- immutable
