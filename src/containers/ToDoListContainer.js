@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { loadToDoList } from '../actions';
+import React, {PureComponent} from 'react'
+import {connect} from 'react-redux'
+import {loadToDoList} from '../actions'
 
-class ToDoListContainer extends Component {
+class ToDoListContainer extends PureComponent {
   componentDidMount() {
-    this.props.loadToDoList();
+    this.props.loadToDoList()
   }
+
   render() {
     return (
       <div>
@@ -15,24 +16,24 @@ class ToDoListContainer extends Component {
           ))}
         </ul>
       </div>
-    );
+    )
   }
 }
 
 const mapStateToProps = state => {
   return {
-    toDoList: state.toDoList
-  };
-};
+    toDoList: state.stuff.toDoList,
+  }
+}
 
 const mapDispatchToProps = dispatch => {
   return {
     loadToDoList: () => dispatch(loadToDoList()),
-    dispatch
-  };
-};
+    dispatch,
+  }
+}
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ToDoListContainer);
+)(ToDoListContainer)

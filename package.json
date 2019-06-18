@@ -47,8 +47,8 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --single-quote --write",
+    "src/**/*.js": [
+      "prettier --single-quote --trailing-comma=es5 --no-semi --jsx-single-quote --no-bracket-spacing es5 --write",
       "git add"
     ]
   },
