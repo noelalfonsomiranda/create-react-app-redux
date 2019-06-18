@@ -14,3 +14,4 @@
 - redux-logger
 - redux-promise-middleware
 - immutable
+- react-router-redux

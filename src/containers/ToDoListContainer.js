@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import ToDoItem from '../components/ToDoItem'
-import {loadToDoList} from '../actions'
+import {getToDoList} from '../actions'
 
 class ToDoListContainer extends Component {
   componentDidMount() {
-    this.props.loadToDoList()
+    this.props.getToDoList()
   }
 
   render() {
@@ -20,6 +20,7 @@ class ToDoListContainer extends Component {
 }
 
 const mapStateToProps = state => {
+  console.log(`asd: state`, state)
   return {
     toDoList: state.stuff.toDoList,
   }
@@ -27,7 +28,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    loadToDoList: () => dispatch(loadToDoList()),
+    getToDoList: () => dispatch(getToDoList()),
     dispatch,
   }
 }

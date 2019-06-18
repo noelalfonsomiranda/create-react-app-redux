@@ -1,5 +1,5 @@
 import {fromJS} from 'immutable'
-import {ADD_TODO, RENDER_TODO_LIST} from '../actions'
+import {ADD_TODO, SET_TODO_LIST} from '../actions'
 
 const initialState = {
   toDoList: [],
@@ -7,7 +7,7 @@ const initialState = {
 
 export default function stuff(state = initialState, action) {
   switch (action.type) {
-    case RENDER_TODO_LIST:
+    case SET_TODO_LIST:
       return {
         ...state,
         toDoList: fromJS(action.toDoList),

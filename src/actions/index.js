@@ -1,7 +1,7 @@
 export const ADD_TODO = 'ADD_TODO'
 
-export const LOAD_TODO_LIST = 'LOAD_TODO_LIST'
-export const RENDER_TODO_LIST = 'RENDER_TODO_LIST'
+export const GET_TODO_LIST = 'GET_TODO_LIST'
+export const SET_TODO_LIST = 'SET_TODO_LIST'
 
 export function addToDo(title) {
   return {
@@ -13,8 +13,16 @@ export function addToDo(title) {
   }
 }
 
-export function loadToDoList() {
+export function getToDoList() {
   return {
-    type: LOAD_TODO_LIST,
+    type: GET_TODO_LIST,
+  }
+}
+
+export function setToDoList(payload) {
+  console.log(`asd: setToDoList -> payload`, payload)
+  return {
+    type: SET_TODO_LIST,
+    payload,
   }
 }
