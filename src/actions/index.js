@@ -20,9 +20,8 @@ export function getToDoList() {
 }
 
 export function setToDoList(payload) {
-  console.log(`asd: setToDoList -> payload`, payload)
   return {
     type: SET_TODO_LIST,
-    payload,
+    ...payload,
   }
 }
