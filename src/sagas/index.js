@@ -1,6 +1,7 @@
 import {call, all, put, takeLatest} from 'redux-saga/effects'
 import {request} from '../utils/request'
-import {GET_TODO_LIST, setToDoList} from '../actions'
+import {setToDoList} from '../actions'
+import {GET_TODO_LIST} from '../constants'
 
 export function* getToDoList() {
   try {

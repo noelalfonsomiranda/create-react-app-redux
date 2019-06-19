@@ -1,5 +1,5 @@
 import {fromJS} from 'immutable'
-import {ADD_TODO, SET_TODO_LIST} from '../actions'
+import {ADD_TODO, SET_TODO_LIST} from '../constants'
 
 const initialState = {
   toDoList: [],
