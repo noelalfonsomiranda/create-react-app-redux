@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "axios": "0.19.0",
     "husky": "2.4.1",
     "immutable": "4.0.0-rc.12",
     "lint-staged": "8.2.1",
     "prettier": "1.18.2",
     "prop-types": "15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-redux": "7.1.0",
     "react-router-dom": "5.0.1",
     "react-router-redux": "4.0.8",
@@ -19,7 +22,8 @@
     "redux-logger": "3.0.6",
     "redux-promise-middleware": "6.1.1",
     "redux-saga": "1.0.3",
-    "styled-components": "4.3.1"
+    "styled-components": "4.3.1",
+    "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +33,10 @@
     "lint": "prettier --single-quote --trailing-comma=es5 --no-semi --jsx-single-quote --no-bracket-spacing es5 --write 'src/**/*.js'"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
