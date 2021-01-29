@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 import logo from './logo.svg'
 
-import AddToDo from './containers/AddToDo'
-import ToDoListContainer from './containers/ToDoListContainer'
+import AddToDo from 'containers/AddToDo'
+import ToDoListContainer from 'containers/ToDoListContainer'
 
 // import Navigation from './components/Navigation'
 
