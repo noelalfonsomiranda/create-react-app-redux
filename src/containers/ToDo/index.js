@@ -23,8 +23,6 @@ export function ToDo({getToDoList, toDoList}) {
     getToDoList()
   }, [getToDoList])
 
-  console.log('asd ~ file: index.js ~ line 21 ~ toDoList', toDoList)
-
   return (
     <div>
       <AddToDo />
