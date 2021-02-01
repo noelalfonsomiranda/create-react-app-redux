@@ -15,3 +15,6 @@
 - redux-promise-middleware
 - immutable
 - react-router-redux
+- redux-actions
+- reselect
+- connected-react-router
