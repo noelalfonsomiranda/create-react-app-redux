@@ -1,4 +1,4 @@
-# create-react-app-starter
+# create-react-app-redux
 
 ### Added libraries
 - axios
