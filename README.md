@@ -1,7 +1,11 @@
 # create-react-app-redux
 
+#### React, create react app, Redux
+> create react app with Redux, inspired from [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate) state management.
+
+
 ### Added libraries
-- axios
+- axios/fetch
 - husky
 - lint-staged
 - prettier
